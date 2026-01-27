@@ -31,6 +31,7 @@ public class ProblemSolve0{
                 System.out.println("Invalid problem number.");
                 break;
         }
+        problem.close();
     }
         
         
@@ -52,6 +53,7 @@ public class ProblemSolve0{
             }
             float average = total / count;
             System.out.println("The average is: " + average);
+            input.close();
         }
 
         public static void problemTwo(){
@@ -64,6 +66,7 @@ public class ProblemSolve0{
                 guess = input.nextInt();
             }
             System.out.print("Correct!");
+            input.close();
         }
 
         public static void problemThree(){
@@ -77,6 +80,7 @@ public class ProblemSolve0{
                 }
             }
             System.out.print("Positive Count: " + positiveCount);
+            input.close();
         }
 
         public static void problemFour(){
@@ -107,6 +111,7 @@ public class ProblemSolve0{
             if(attempts == 3){
                 System.out.println("Account Locked");
             }
+            input.close();
         }
 
         public static void problemSix(){
@@ -131,6 +136,7 @@ public class ProblemSolve0{
             }
             }
             System.out.print("Number of vowels: " + countVowels);
+            input.close();
         }
         
     }
